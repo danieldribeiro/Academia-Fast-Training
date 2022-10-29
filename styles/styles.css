@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Personalização da scrollbar */
+::-webkit-scrollbar{
+    background-color: #1d1d1d;
+    width: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #5b5b5b;
+    border-radius: 5px;
+}
+/* Fim da personalização da scrollbar */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.616),transparent);
+    position: fixed;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fast-training-logo {
+    width: 120px;
+}
+
+.nav-links-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.nav-links:hover{
+    text-shadow: 0 0 10px white;
+    color: white;
+}
+
+.nav-button {
+    border: 1px solid white;
+    padding: 12px;
+}
+
+.nav-button:hover{
+    box-shadow: 0 0 10px white;
+    background-color: #00000069;
+}
+
+/* Main */
+/* Carousel */
+main {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+}
+
+/* Altura do carousel */
+.carousel .carousel-item {
+    height: 650px;
+}
+
+/* Altura da imagem do carousel */
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 650px;
+}
+
+@media (min-width: 1441px){
+.main{
+    height: auto;
+}
+
+.carousel-container {
+    height: 750px;
+}
+/* Altura do carousel */
+.carousel .carousel-item {
+    height: 750px;
+}
+
+/* Altura da imagem do carousel */
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 750px;
+}
+}
+/* Fim Carousel */
+
+/* Know Section */
+.know-section{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.know-section h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.know-options{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.know-section-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.know-section-links a{
+    border: 1px solid #508ee6;
+    border-radius: 5px;
+    background-color: #508ee6;
+    padding: 20px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.know-section-links a:hover{
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.562);
+    background-color: #3d7bd1;
+    transition: 0.2s;
+}
+/* Fim know section */
+
+/* Início Mission Section */
+.mission-section{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 10px 50px;
+    background-image: url(../images/mission-section-background.jpg);
+    background-position: 50%;
+    color: white;
+}
+
+.mission-section h1{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 3.5rem;
+    margin-bottom: 40px;
+}
+
+.mission-section p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-shadow: 0 0 50px black;
+}
+
+.mission-section a{
+    border: 1px solid #508ee6;
+    border-radius: 5px;
+    background-color: #508ee6;
+    padding: 20px;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mission-section a:hover{
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.562);
+    background-color: #3d7bd1;
+    transition: 0.2s;
+}
+/* Fim mission section */
+
+/* Início seção Nossos serviços */
+.our-services-section{
+    width: 100%;
+    height: 50rem;
+}
+
+.our-services-section h1{
+    text-align: center;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.our-services-grid-container{
+    width: 80%;
+    height: 88%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.grid-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    text-transform: uppercase;
+    padding: 20px;
+    gap: 10px;
+    color: white;
+}
+
+.grid-item i{
+    color: white;
+}
+
+.grid-item h2{
+    font-weight: bold;
+}
+
+.item1{
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/troca-periodica.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item2{
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/avaliacao.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/musculacao.jpg);
+    background-size: cover;
+}
+
+.item4{
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/funcional.jpg);
+    background-size: cover;
+}
+
+.item5{
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/personal.jpg);
+    background-size: cover;
+}
+
+.item6{
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/semi-personal.jpeg);
+    background-size: cover;
+}
+/* Fim seção Nossos serviços */
+
+/* Início seção dúvidas */
+.doubts-section{
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(../images/fast-training-recepcao.webp);
+    background-size: cover;
+    background-position: top;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.doubts-section h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.doubts-section-links{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 50px;
+}
+
+.doubts-section a{
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #508ee6;
+    border-radius: 5px;
+    background-color: #508ee6;
+    padding: 25px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.doubts-section a:hover{
+    color: white;
+    transform: scale(1.02);
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.562);
+    background-color: #3d7bd1;
+    transition: 0.2s;
+}
+/* Fim seção dúvidas */
+
+/* Início seção parceiros */
+.partners-section{
+    width: 100%;
+    height: 180px;
+    padding: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.partners-section h1{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.partners img{
+    width: 200px;
+}
+/* Fim seção parceiros */
+
+.hr{
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+}
+
+/* Início seção redes sociais */
+.social-medias{
+    width: 80%;
+    height: 100px;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.social-medias h1{
+    font-size: 1.5rem;
+    color: rgb(99, 98, 98);
+    margin-bottom: 15px;
+}
+
+.social-medias-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social-medias i{
+    color: #5b5b5b;
+}
+
+.social-medias i:hover{
+    color: black;
+}
+/* Fim seção redes sociais */
+
+/* Início footer */
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+}
+
+.footer-container{
+    width: 80%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img{
+    width: 200px;
+}
+
+.footer-container .hr hr{
+    color:white;
+}
+
+.footer-container p{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.footer-container a{
+    color: white;
+}
+
+.footer-container a:hover{
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+/* Fim footer */

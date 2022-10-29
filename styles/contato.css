@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+.contact-section{
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    color: #424850;
+}
+
+.contact-form-container{
+    width: 50%;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.361);
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.contact-form-container h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.form-floating{
+    width: 70%;
+}
+
+.form-floating label{
+    font-size: 1.7rem;
+}
+
+button{
+	width: 120px;
+	height: 50px;
+}
+
+/* Botões definições globais */
+button.animated-button:link, button.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+button.animated-button:link:after, button.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+button.animated-button:link:hover, button.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+button.animated-button:link:hover:after, button.animated-button:visited:hover:after {
+	height: 450%;
+}
+button.animated-button:link, button.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size: 2.5rem;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/* Animação botão */
+button.animated-button.thar-three {
+	color: #424850;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid #424850;
+    border-radius: 5px;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+	font-size: 2rem;
+}
+button.animated-button.thar-three:hover {
+	color: #fff !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+button.animated-button.thar-three:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+button.animated-button.thar-three:before {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+    bottom: 0;
+	height: 99%;
+	width: 0;
+	z-index: -1;
+	content: '';
+	color: #fff !important;
+	background: #424850;
+    border-radius: 5px;
+	transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+}

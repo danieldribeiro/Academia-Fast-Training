@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap');
+
+.main-image-container{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.37)), url(../images/doubts-main-image.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image-container h1{
+    color: white;
+    margin-top: 300px;
+    text-transform: uppercase;
+    font-size: 6.4rem;
+    font-weight: bold;
+}
+
+/* Início faq section */
+.faq-section{
+    width: 100%;
+    height: auto;
+}
+
+.faq-container{
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.faq-section h1{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #424850;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+
+.faq-section hr{
+    margin-bottom: 20px;
+}
+
+.accordion{
+    margin-bottom: 50px;
+}
+
+.accordion-item{
+    margin-bottom: 15px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.267);
+    font-family: 'Oswald', sans-serif;
+}
+
+.accordion-button span{
+    font-size: 2rem;
+    color: #424850;
+    padding: 10px;
+}
+
+.accordion-body{
+    font-size: 2rem;
+}
+
+.accordion-body a{
+    color: black;
+    font-weight: bold;
+}

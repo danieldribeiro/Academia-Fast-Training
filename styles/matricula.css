@@ -1,0 +1,22 @@
+.linha{
+    width: 70%; 
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+}
+
+.check-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.check-container{
+    font-size: 2rem;
+}
+
+.document{
+    width: 39%;
+    height: 50px;
+    scale: 1.8;
+}

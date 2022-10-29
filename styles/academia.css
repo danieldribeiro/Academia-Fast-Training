@@ -1,0 +1,49 @@
+.academia-main-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.37)),url(../images/academia-main-image.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.academy-section{
+    width: 80%;
+    height: auto;
+    padding: 20px 20px 50px 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.academy-section h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: #424850;
+}
+
+.academy-section p{
+    text-align: center;
+    color: #424850;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.academy-section video{
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+}
+
+.academy-adress{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.academy-section iframe{
+    width: 100%;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.404);
+    border-radius: 5px;
+}
+

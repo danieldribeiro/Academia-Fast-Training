@@ -1,0 +1,48 @@
+.activity-main-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.379), rgba(0, 0, 0, 0.37)),url(../images/atividades-main-image.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.activities-section{
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+.activities-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.activity-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.activity-title h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.activity{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 2rem;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+.activity img{
+    width: 400px;
+}
+
+.functional{
+    flex-direction: row-reverse;
+}
